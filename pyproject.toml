@@ -1,0 +1,20 @@
+[project]
+name = "mcp-start"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastmcp>=2.14.3,<3",
+    "langchain>=1.4.6",
+    "langchain-google-genai>=4.4.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "mcp>=1.24,<2",
+]
+
+[project.scripts]
+mcp-start = "mcp_start:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
